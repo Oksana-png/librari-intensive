@@ -212,7 +212,7 @@ export const server = () => {
   gulp.watch(path.watch.assets, copy);
 }
 
-const clear = () => del(path.dist.base);
+export const clear = () => del(path.dist.base);
 
 const develop = (ready) => {
   dev = true;

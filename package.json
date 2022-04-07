@@ -36,5 +36,9 @@
     "sass": "^1.49.11",
     "webpack": "^5.71.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "g": "^2.0.1",
+    "gulp-cli": "^2.3.0"
   }
 }
