@@ -13,7 +13,7 @@
     <header class="header library__header">
       <div class="container">
         <img src="image/logo.svg" alt="Big Brother">
-        <button class="header__btn--add">Добавить книгу</button>
+        <button class="header__btn header__btn--add">Добавить книгу</button>
         <button class="header__btn header__btn--search">
           <img src="image/search.svg" alt="search">
         </button>
@@ -113,12 +113,12 @@
       </ul>
     </div>
     <footer class="footer">
-      <button class="footer__btn library__add--btn" aria-label="Добавить книгу"></button>
+      <button class="library__add footer__btn library__add--btn" aria-label="Добавить книгу"></button>
     </footer>
   </section>
 
   <section class="book">
-    <header class="header library__header">
+    <header class="header book__header">
       <div class="container">
         <img src="image/logo.svg" alt="Big Brother">
         <button class="header__btn header__btn--back">назад</button>
@@ -186,10 +186,10 @@
           <div class="upload">
             <p class="add__subtitle">Загрузить обложку</p>
 
-            <label for="" class="upload__label">
+            <label for="preview" class="upload__label">
               <img class="upload__preview" src="about:blank" alt="Превью изображения">
 
-              <input type="file" class="upload__file" accept="image/*">
+              <input type="file" class="upload__file" accept="image/*" id="preview">
             </label>
           </div>
         </fieldset>
