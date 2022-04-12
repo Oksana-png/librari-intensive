@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "g": "^2.0.1",
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "navigo": "^8.11.1"
   }
 }

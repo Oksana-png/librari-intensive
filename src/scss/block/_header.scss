@@ -1,0 +1,26 @@
+.header {
+  padding: 8px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    height: 40px;
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-color: transparent;
+    border: none;
+    background-position: center right;
+  }
+  &__btn--add {
+    display: 0;
+  }
+  &__btn--search {
+    background-image: url('../image/search.svg');
+  }
+}

@@ -1,5 +1,12 @@
-@import 'war';
+@import 'normolize';
+@include normalize();
+@import 'var';
+@import 'font';
+@import 'default';
 
-@include font(Roboto, 400);
-@include font(Roboto, 700);
-@include font(Roboto, 900);
+
+@import 'block/header';
+@import 'block/library';
+@import 'block/cart';
+@import 'block/book';
+@import 'block/footer';

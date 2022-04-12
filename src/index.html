@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big Brothers - библиотека</title>
   <link rel="stylesheet" href="css/index.min.css">
-  <script src="js/index.min.js"></script>
+  <script src="js/index.min.js" defer></script>
 </head>
 <body>
   <section  class="library">
     <header class="header library__header">
-      <div class="container">
-        <img src="image/logo.svg" alt="Big Brother">
-        <button class="header__btn header__btn--add">Добавить книгу</button>
-        <button class="header__btn header__btn--search">
-          <img src="image/search.svg" alt="search">
-        </button>
+      <div class="container header__container">
+        <img class="header__logo" src="image/logo.svg" alt="Big Brother">
+        <button class="header__btn header__btn--add" aria-label="Найти книгу">Добавить книгу</button>
+        <button class="header__btn header__btn--search"></button>
       </div>
     </header>
     <div class="container library__titles">
@@ -67,7 +65,7 @@
       <h2 class="visually-hidden">Список книг</h2>
       <ul class="library__list">
         <li class="library__item">
-          <a href="/book">
+          <a href="/book" data-navigo>
             <article class="cart">
               <div class="cart__wrapper">
                 <img class="cart__image" src="image/1984.jpg" alt="book: 1984">
@@ -89,7 +87,7 @@
           </a>
         </li>
         <li class="library__item">
-          <a href="/book">
+          <a href="/book" data-navigo>
             <article class="cart">
               <div class="cart__wrapper">
                 <img class="cart__image" src="image/big-brother.jpg" alt="book: Big Brother">
@@ -113,16 +111,29 @@
       </ul>
     </div>
     <footer class="footer">
-      <button class="library__add footer__btn library__add--btn" aria-label="Добавить книгу"></button>
+      <button class="library__add footer__btn library__add--btn" aria-label="Добавить книгу">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22" cy="22" r="22" fill="currentColor"/>
+          <rect x="21.7767" y="9.21667" width="0.433333" height="25.5667" fill="#242424" stroke="white" stroke-width="0.433333"/>
+          <rect x="9.21667" y="22.2233" width="0.433333" height="25.5667" transform="rotate(-90 9.21667 22.2233)" fill="#242424" stroke="white" stroke-width="0.433333"/>
+        </svg>
+      </button>
     </footer>
   </section>
 
-  <section class="book">
+  <section class="book hidden">
     <header class="header book__header">
-      <div class="container">
-        <img src="image/logo.svg" alt="Big Brother">
-        <button class="header__btn header__btn--back">назад</button>
-        <button class="header__btn header__btn--delete">удалить</button>
+      <div class="container header__container">
+        <button class="header__btn header__btn--back">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="white"/>
+          </svg>
+        </button>
+        <button class="header__btn header__btn--delete">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z" fill="#EAEAEA"/>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -153,11 +164,10 @@
     </footer>
   </section>
 
-  <section class="add">
-    <h2 class="visually-hidden">Добавление книги</h2>
+  <section class="add hidden">
+    <h2 class="visually-hidden">Добавить книгу</h2>
     <header class="header add__header">
-      <div class="container">
-        <img src="image/logo.svg" alt="Big Brother">
+      <div class="container header__container">
         <button class="header__btn header__btn--back">назад</button>
         <button class="header__btn header__btn--search">поиск</button>
       </div>
